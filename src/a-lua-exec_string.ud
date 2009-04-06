@@ -1,0 +1,27 @@
+(section
+  (ref "lua_exec_string")
+  (title "Lua.Exec_String")
+  (para function_desc "Execute string as Lua code.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Exec_String
+  (State : State_t;
+   Str   : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Exec_String") " function executes the
+      Lua statement(s) contained in " (item parameter "Str") ".")
+    (para
+      "The string is compiled and pushed onto the stack with "
+      (link "lua_load_buffer" "Lua.Load_Buffer") " and executed with "
+      (link "lua_pcall" "Lua.Protected_Call") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Exec_String") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#luaL_dostring" "luaL_dostring") ".")))

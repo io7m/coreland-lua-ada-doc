@@ -1,0 +1,21 @@
+(section
+  (ref "lua_open_string")
+  (title "Lua.Lib.Open_String")
+  (para procedure_desc "Open string library.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Open_String (State : Lua.State_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Open_String") " procedure loads the Lua "
+      (item package "string") " library."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Open_String") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#5" "luaopen_string") ".")))

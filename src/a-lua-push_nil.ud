@@ -1,0 +1,21 @@
+(section
+  (ref "lua_push_nil")
+  (title "Lua.Push_Nil")
+  (para procedure_desc "Push nil onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_Nil (State : State_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_Nil") " procedure pushes "
+      (item constant "nil") " onto the top of the Lua stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_Nil") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushnil" "lua_pushnil") ".")))

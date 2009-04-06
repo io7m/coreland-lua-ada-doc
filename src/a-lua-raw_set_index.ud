@@ -1,0 +1,28 @@
+(section
+  (ref "lua_raw_set_index")
+  (title "Lua.Raw_Set_Index")
+  (para procedure_desc "Set value of table index without metamethods.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Raw_Set_Index
+  (State   : State_t;
+   Index   : Index;
+   Element : Index);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Raw_Set_Index") " procedure is equivalent to "
+      (link "lua_set_table" "Lua.Set_Table") " but does raw assignment (does not
+      call metamethods).")
+    (para
+      "The procedure assigns to " (item parameter "Index") "["
+      (item parameter "Element") "]."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Raw_Set_Index") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_rawseti" "lua_rawseti") ".")))

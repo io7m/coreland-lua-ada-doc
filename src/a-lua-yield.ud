@@ -1,0 +1,33 @@
+(section
+  (ref "lua_yield")
+  (title "Lua.Yield")
+  (para function_desc "Yield a coroutine.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Yield
+  (State       : State_t;
+   Num_Results : Integer_t) return Integer_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Yield") " function yields a coroutine.")
+    (para
+      "The function should only be called as a \"tail\" call. For example:")
+    (para-verbatim example
+"return Yield (State, 2);")
+    (para
+      "When an Ada subprogram calls " (item ada_function "Yield") " in
+      that way, the running coroutine suspends its execution, and the
+      call to " (item ada_function "Resume") " that started this
+      coroutine returns.  The parameter " (item parameter "Num_Results")
+      " is the number of values from the stack that are passed as
+      results to " (item ada_function "Resume") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Yield") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_yield" "lua_yield") ".")))

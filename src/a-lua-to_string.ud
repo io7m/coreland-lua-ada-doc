@@ -1,0 +1,24 @@
+(section
+  (ref "lua_to_string")
+  (title "Lua.To_String")
+  (para function_desc "Return element of stack as string.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function To_String
+  (State : State_t;
+   Index : Integer) return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "To_String") " function
+      returns the element of the stack at " (item parameter "Index")
+      " as a string."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "To_String") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_tostring" "lua_tostring") ".")))

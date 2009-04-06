@@ -1,0 +1,23 @@
+(section
+  (ref "lua_error")
+  (title "Lua.Error")
+  (para function_desc "Signal error.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+procedure Error (State : State_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Error") " procedure
+      generates a Lua error. The error message (which can actually be a
+      Lua value of any type) must be on the stack top. This procedure
+      does a long jump, and therefore never returns."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Error") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_error" "lua_error") ".")))

@@ -1,0 +1,21 @@
+(section
+  (ref "lua_open_math")
+  (title "Lua.Lib.Open_Math")
+  (para procedure_desc "Open math library.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Open_Math (State : Lua.State_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Open_Math") " procedure loads the Lua "
+      (item package "math") " library."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Open_Math") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#5" "luaopen_math") ".")))

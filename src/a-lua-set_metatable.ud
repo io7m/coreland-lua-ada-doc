@@ -1,0 +1,24 @@
+(section
+  (ref "lua_set_metatable")
+  (title "Lua.Set_Metatable")
+  (para function_desc "Set metatable.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Set_Metatable
+  (State : State_t;
+   Index : Integer) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Set_Metatable") " function
+      pops a table from the stack and sets it as the new metatable for the
+      value at " (item parameter "Index") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Set_Metatable") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_setmetatable" "lua_setmetatable") ".")))

@@ -1,0 +1,26 @@
+(section
+  (ref "lua_open_library")
+  (title "Lua.Lib.Open_Library")
+  (para function_desc "Load external Lua library.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+procedure Open_Library
+ (State     : Lua.State_t;
+  Name      : String;
+  Functions : Register_Array_t;
+  num_up    : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Open_Library") " function loads the
+      external Lua library " (item parameter "Name") ", consisting of
+      " (item parameter "Functions") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Open_Library") " function is roughly equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#luaL_register" "luaL_register") ".")))

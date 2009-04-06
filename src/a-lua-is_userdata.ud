@@ -1,0 +1,25 @@
+(section
+  (ref "lua_is_userdata")
+  (title "Lua.Is_Userdata")
+  (para function_desc "Element of stack is userdata?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Is_Userdata
+  (State : State_t;
+   Index : Integer) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Is_Userdata") " function
+      returns " (item constant "True") " if the element of
+      the stack at " (item parameter "Index") " is a userdata or "
+      (item constant "False") " otherwise."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Is_Userdata") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_isuserdata" "lua_isuserdata") ".")))

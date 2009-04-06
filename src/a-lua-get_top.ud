@@ -1,0 +1,21 @@
+(section
+  (ref "lua_get_top")
+  (title "Lua.Get_Top")
+  (para function_desc "Get index of top of stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Get_Top (State : State_t) return Integer;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Top") " function returns the
+      integer index of the top of the Lua stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Get_Top") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_gettop" "lua_gettop") ".")))

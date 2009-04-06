@@ -1,0 +1,19 @@
+(section
+  (ref "lua_load_file")
+  (title "Lua.Load_File")
+  (para function_desc "Create new interpreter context.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Load_File
+  (State : State_t;
+   File  : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Load_File") " function reads the contents
+      of " (item parameter "File") " and loads them as a Lua chunk using "
+      (link "lua_load_buffer" "Lua.Load_Buffer") ".")))

@@ -1,0 +1,23 @@
+(section
+  (ref "lua_push_value")
+  (title "Lua.Push_Value")
+  (para procedure_desc "Push copy of value onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_Value
+  (State : State_t;
+   Index : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_Value") " procedure pushes a copy of the
+      element at the given valid index onto the Lua stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_Value") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushvalue" "lua_pushvalue") ".")))

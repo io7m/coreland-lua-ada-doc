@@ -1,0 +1,26 @@
+(section
+  (ref "lua_push_user_closure")
+  (title "Lua.Push_User_Closure")
+  (para procedure_desc "Push closure onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_User_Closure
+  (State      : State_t;
+   Func       : User_Function_t;
+   Num_Params : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_User_Closure") " procedure pushes "
+      (item parameter "Func") " onto the top of the Lua stack.")
+    (para
+      (item parameter "Func") " takes " (item parameter "Num_Params") " parameters."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_User_Closure") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushclosure" "lua_pushclosure") ".")))

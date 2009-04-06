@@ -1,0 +1,12 @@
+(section
+  (title "Orientation")
+
+  (section
+    (title "Overview")
+
+    (para "This package provides a set of Ada bindings to the "
+      (link-ext "http://lua.org" "Lua") " C API.")
+    (para "This documentation should be considered supplementary to the "
+      (link-ext "http://www.lua.org/manual/5.1/" "Lua Reference Manual") "."))
+
+) ; end of section

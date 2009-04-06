@@ -1,0 +1,19 @@
+(section
+  (title "Lua.Lib API Reference")
+  (contents)
+
+  (para "The " (item ada_package "Lua.Lib") " package allows the
+    loading and registration of external Lua libraries written
+    in foreign languages such as Ada or C.")
+
+  (include "a-lua-lib-open_library.ud")
+
+  (include "a-lua-lib-open_base.ud")
+  (include "a-lua-lib-open_table.ud")
+  (include "a-lua-lib-open_string.ud")
+  (include "a-lua-lib-open_io.ud")
+  (include "a-lua-lib-open_math.ud")
+  (include "a-lua-lib-open_debug.ud")
+  (include "a-lua-lib-open_libs.ud")
+
+) ; end of section

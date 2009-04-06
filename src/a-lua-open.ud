@@ -1,0 +1,22 @@
+(section
+  (ref "lua_open")
+  (title "Lua.Open")
+  (para function_desc "Create new interpreter context.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Open return State_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Open") " function returns a new
+      interpreter context. If memory cannot be allocated, the
+      function returns " (item constant "State_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Open") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#luaL_newstate" "luaL_newstate") ".")))

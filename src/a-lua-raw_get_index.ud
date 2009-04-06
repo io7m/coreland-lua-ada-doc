@@ -1,0 +1,28 @@
+(section
+  (ref "lua_raw_get_index")
+  (title "Lua.Raw_Get_Index")
+  (para procedure_desc "Get table index without metamethods.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Raw_Get_Index
+  (State   : State_t;
+   Index   : Index;
+   Element : Index);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Raw_Get_Index") " procedure is equivalent to "
+      (link "lua_get_table" "Lua.Get_Table") " but does raw access (does not
+      call metamethods).")
+    (para
+      "The procedure fetches " (item parameter "Index") "["
+      (item parameter "Element") "]."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Raw_Get_Index") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_rawgeti" "lua_rawgeti") ".")))

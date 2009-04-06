@@ -1,0 +1,43 @@
+(section
+  (ref "lua_push_string")
+  (title "Lua.Push_String")
+  (para procedure_desc "Push string onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_String
+  (State : State_t;
+   Str   : ICS.chars_ptr);
+
+procedure Push_String
+  (State : State_t;
+   Str   : String);
+
+procedure Push_String
+  (State : State_t;
+   Str   : UB_Strings.Unbounded_String);
+
+procedure Push_String
+  (State   : State_t;
+   Address : System.Address;
+   Size    : Positive);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_String") " procedures pushe "
+      (item parameter "Str") " onto the top of the Lua stack.")
+    (para
+      "The fourth form of the procedure takes the address and size of
+       arbitrary data as parameters."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_String") " procedures are roughly
+      equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushstring" "lua_pushstring")
+      " and "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushlstring" "lua_pushlstring")
+      ".")))

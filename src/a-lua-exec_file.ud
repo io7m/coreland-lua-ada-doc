@@ -1,0 +1,27 @@
+(section
+  (ref "lua_exec_file")
+  (title "Lua.Exec_File")
+  (para function_desc "Execute file as Lua code.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Exec_File
+  (State : State_t;
+   File  : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Exec_File") " function executes the
+      Lua code contained in " (item parameter "File") ".")
+    (para
+      "The file is compiled and pushed onto the stack with "
+      (link "lua_load_file" "Lua.Load_File") " and executed with "
+      (link "lua_pcall" "Lua.Protected_Call") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Exec_File") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#luaL_dofile" "luaL_dofile") ".")))

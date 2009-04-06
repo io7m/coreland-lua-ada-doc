@@ -1,0 +1,88 @@
+(section
+  (title "Lua API Reference")
+  (contents)
+
+  (include "a-lua-types.ud")
+
+  (include "a-lua-open.ud")
+  (include "a-lua-close.ud")
+  (include "a-lua-at_panic.ud")
+  (include "a-lua-get_top.ud")
+  (include "a-lua-push_value.ud")
+  (include "a-lua-remove.ud")
+  (include "a-lua-insert.ud")
+  (include "a-lua-replace.ud")
+  (include "a-lua-check_stack.ud")
+
+  (include "a-lua-load_buffer.ud")
+  (include "a-lua-load_file.ud")
+  (include "a-lua-load_typed.ud")
+  (include "a-lua-exec_string.ud")
+  (include "a-lua-exec_file.ud")
+
+  (include "a-lua-call.ud")
+  (include "a-lua-pcall.ud")
+  (include "a-lua-error.ud")
+
+  (include "a-lua-is_number.ud")
+  (include "a-lua-is_string.ud")
+  (include "a-lua-is_user_function.ud")
+  (include "a-lua-is_userdata.ud")
+  (include "a-lua-is_nil.ud")
+  (include "a-lua-is_equal.ud")
+  (include "a-lua-is_raw_equal.ud")
+  (include "a-lua-is_less_than.ud")
+
+  (include "a-lua-type_of.ud")
+  (include "a-lua-type_name.ud")
+
+  (include "a-lua-to_number.ud")
+  (include "a-lua-to_string.ud")
+  (include "a-lua-to_boolean.ud")
+  (include "a-lua-to_c_function.ud")
+
+  (include "a-lua-object_length.ud")
+
+  (include "a-lua-push_boolean.ud")
+  (include "a-lua-push_nil.ud")
+  (include "a-lua-push_number.ud")
+  (include "a-lua-push_string.ud")
+  (include "a-lua-push_user_closure.ud")
+  (include "a-lua-push_user_function.ud")
+
+  (include "a-lua-new_table.ud")
+  (include "a-lua-new_thread.ud")
+
+  (include "a-lua-get_table.ud")
+  (include "a-lua-get_metatable.ud")
+  (include "a-lua-raw_get.ud")
+  (include "a-lua-raw_get_index.ud")
+  (include "a-lua-get_field.ud")
+  (include "a-lua-get_global.ud")
+  (include "a-lua-get_fenv.ud")
+
+  (include "a-lua-set_table.ud")
+  (include "a-lua-set_metatable.ud")
+  (include "a-lua-raw_set.ud")
+  (include "a-lua-raw_set_index.ud")
+  (include "a-lua-set_field.ud")
+  (include "a-lua-set_global.ud")
+  (include "a-lua-set_fenv.ud")
+
+  (include "a-lua-resume.ud")
+  (include "a-lua-yield.ud")
+
+;  (include "a-lua-concat.ud")
+;  (include "a-lua-register.ud")
+;  (include "a-lua-pop.ud")
+;  (include "a-lua-next.ud")
+;  (include "a-lua-reference.ud")
+;  (include "a-lua-unreference.ud")
+;  (include "a-lua-dereference.ud")
+
+  (include "a-lua-version.ud")
+
+;  (include "a-lua-set_hook.ud")
+;  (include "a-lua-get_hook_mask.ud")
+
+) ; end of section

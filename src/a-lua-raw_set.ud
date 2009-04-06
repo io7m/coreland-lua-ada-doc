@@ -1,0 +1,24 @@
+(section
+  (ref "lua_raw_set")
+  (title "Lua.Raw_Set")
+  (para procedure_desc "Set value in table without metamethods.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Raw_Set
+  (State : State_t;
+   Index : Integer) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Raw_Set") " procedure is equivalent to "
+      (link "lua_set_table" "Lua.Set_Table") " but does raw assignment (does not
+      call metamethods)."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Raw_Set") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_rawset" "lua_rawset") ".")))

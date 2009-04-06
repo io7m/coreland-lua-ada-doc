@@ -1,0 +1,28 @@
+(section
+  (ref "lua_call")
+  (title "Lua.Call")
+  (para procedure_desc "Call function.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Call
+  (State         : State_t;
+   Num_Arguments : Integer;
+   Num_Results   : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Call") " procedure removes "
+      (item parameter "Num_Arguments") " arguments from the stack
+      and then calls the Lua function on the top of the stack, returning "
+      (item parameter "Num_Results") " results.")
+    (para
+      "Any errors signalled will be propagated."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Call") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_call" "lua_call") ".")))

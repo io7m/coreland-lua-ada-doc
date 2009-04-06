@@ -1,0 +1,26 @@
+(section
+  (ref "lua_version")
+  (title "Lua.Version")
+  (para function_desc "Lua version information.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Version return String;
+function Release return String;
+function Version return Integer;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Version") " function returns version
+      information about the current Lua interpreter."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Version") " functions are equivalent to
+      the preprocessor macros " (item constant "LUA_VERSION") ", "
+      (item constant "LUA_RELEASE") " and " (item constant "LUA_VERSION_NUM")
+      ", respectively.")))
+      

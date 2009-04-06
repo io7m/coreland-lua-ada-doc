@@ -1,0 +1,41 @@
+(section
+  (ref "lua_load_buffer")
+  (title "Lua.Load_Buffer")
+  (para function_desc "Load Lua chunk.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Load_Buffer
+ (State  : State_t;
+  Buffer : ICS.chars_ptr;
+  Size   : IC.size_t;
+  Name   : String) return Error_t;
+
+function Load_Buffer
+ (State  : State_t;
+  Buffer : String;
+  Size   : Natural;
+  Name   : String) return Error_t;
+
+function Load_Buffer
+ (State  : State_t;
+  Buffer : UB_Strings.Unbounded_String;
+  Name   : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Load_Buffer") " functions load the buffer "
+      (item parameter "Buffer") " of size " (item parameter "Size") " bytes, named "
+      (item parameter "Name") " (if specified) as a Lua chunk.")
+    (para
+      "The functions return " (item constant "Lua_Error_None") " on success or
+      any of the other enumeration values of " (item ada_type "Error_t") " on
+      failure."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Load_Buffer") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_load" "lua_load") ".")))

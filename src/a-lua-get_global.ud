@@ -1,0 +1,31 @@
+(section
+  (ref "lua_get_global")
+  (title "Lua.Get_Global")
+  (para procedure_desc "Get value from global.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Get_Global
+  (State : State_t;
+   Key   : ICS.chars_ptr);
+
+procedure Get_Global
+  (State : State_t;
+   Key   : String);
+
+procedure Get_Global
+  (State : State_t;
+   Key   : UB_Strings.Unbounded_String);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Global") " procedure 
+      pushes onto the stack the value of " (item parameter "Key") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Get_Global") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_getglobal" "lua_getglobal") ".")))

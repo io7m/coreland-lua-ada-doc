@@ -1,0 +1,26 @@
+(section
+  (ref "lua_get_metatable")
+  (title "Lua.Get_Metatable")
+  (para function_desc "Get metatable.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Get_Metatable
+  (State : State_t;
+   Index : Integer) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Metatable") " function pushes onto the
+      stack the metatable of the value at " (item parameter "Index") ". If "
+      (item parameter "Index") " is not valid, or if the value does not have a
+      metatable, the function returns " (item constant "Lua_Error_Runtime")
+      " and pushes nothing on the stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Get_Metatable") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_getmetatable" "lua_getmetatable") ".")))

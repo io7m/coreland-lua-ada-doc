@@ -1,0 +1,34 @@
+(section
+  (ref "lua_at_panic")
+  (title "Lua.At_Panic")
+  (para function_desc "Register panic callback.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function At_Panic
+  (State          : State_t;
+   Panic_Function : User_Function_t) return User_Function_t;
+
+procedure At_Panic
+  (State          : State_t;
+   Panic_Function : User_Function_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "At_Panic") " subprograms
+      register " (item parameter "Panic_Function") " as the
+      function to be called if the interpreter referenced by "
+      (item parameter "State") " encounters an unrecoverable
+      error.")
+    (para
+      "The function form of " (item ada_function "At_Panic")
+      " returns the previous (or default) panic function."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "At_Panic") " subprograms are equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_atpanic" "lua_atpanic") ".")))
+

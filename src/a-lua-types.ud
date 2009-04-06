@@ -1,0 +1,50 @@
+(section
+  (title "Types")
+
+  (para "The " (item ada_package "Lua") " package uses the following
+    publically visible package renames: ")
+
+  (para-verbatim ada_type_synopsis
+"package IC renames Interfaces.C;
+package ICS renames Interfaces.C.Strings;
+package UB_Strings renames Ada.Strings.Unbounded;")
+
+  (para "The package provides the following types that match the
+    default types for " (item c_type "lua_Integer") " and "
+    (item c_type "lua_Number") " in the standard " (item package "Lua")
+    " distribution:")
+
+  (para-verbatim ada_type_synopsis
+"type Integer_t is new IC.int;
+subtype Number_t is IC.double;")
+
+  (para "These definitions should be modified to match the definitions
+    of any locally-modified versions of " (item package "Lua") ".")
+
+  (para "The " (item package "Lua") " API uses an opaque type to represent
+    the current interpreter context. A program may use as many interpreter
+    contexts as required.")
+
+  (para-verbatim ada_type_synopsis
+"type State_t is private;")
+
+  (para "Nearly all subprograms in the " (item ada_package "Lua") " package
+    operate directly on this private type.")
+
+  (para "Many subprograms in the API return an status value. The type of
+    this status value is as follows:")
+
+  (para-verbatim ada_type_synopsis
+"type Error_t is
+ (Lua_Error_None,
+  Lua_Error_Runtime,
+  Lua_Error_File,
+  Lua_Error_Syntax,
+  Lua_Error_Memory,
+  Lua_Error_Error,
+  Lua_Exception);")
+
+  (para "Any subprogram that returns " (item ada_type "Error_t") " returns "
+    (item constant "Error_None") " on success or any of the other values
+    on failure.")
+)

@@ -1,0 +1,24 @@
+(section
+  (ref "lua_remove")
+  (title "Lua.Remove")
+  (para procedure_desc "Remove element from stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Remove
+  (State : State_t;
+   Index : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Remove") " procedure removes the element at
+      the given valid index, shifting down the elements above this index to
+      fill the gap."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Remove") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_remove" "lua_remove") ".")))

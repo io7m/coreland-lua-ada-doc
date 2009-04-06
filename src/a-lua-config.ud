@@ -1,0 +1,19 @@
+(section
+  (title "Lua.Config API Reference")
+  (contents)
+
+  (para "The " (item ada_package "Lua.Config") " package provides
+    information about the current Lua implementation.")
+
+  (subsection
+    (ref "lua_config_can_propagate_exceptions")
+    (title "Lua.Config.Can_Propagate_Exceptions")
+
+    (para "The " (item ada_type "Boolean") " constant "
+      (item constant "Can_Propagate_Exceptions") " is set to "
+      (item constant "True") " if the Lua library has been compiled
+      with the ability to propogate Ada exceptions up the call stack"
+      (footnote (item "With GCC this means compiling the Lua C library
+        with " (item option "-fexceptions") ".")) "."))
+
+) ; end of section

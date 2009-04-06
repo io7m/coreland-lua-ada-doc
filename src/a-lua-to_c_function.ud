@@ -1,0 +1,27 @@
+(section
+  (ref "lua_to_c_function")
+  (title "Lua.To_C_Function")
+  (para function_desc "Return element of stack as function.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function To_C_Function
+  (State : State_t;
+   Index : Integer) return User_Function_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "To_C_Function") " function
+      returns the element of the stack at " (item parameter "Index")
+      " as a function.")
+    (para
+      "Note that the name is somewhat misleading. The function returned
+       may, of course, be an Ada function."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "To_C_Function") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_tocfunction" "lua_tocfunction") ".")))

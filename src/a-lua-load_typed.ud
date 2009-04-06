@@ -1,0 +1,39 @@
+(section
+  (ref "lua_load_typed")
+  (title "Lua.Load_Typed")
+  (para function_desc "Load Lua code from arbitrary sources.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+type Chunk_Reader_t is access function
+ (State : State_t;
+  Data  : System.Address;
+  Size  : access IC.size_t) return System.Address;
+
+generic
+  type User_Data is limited private;
+
+function Load_Typed
+  (State      : State_t;
+   Reader     : Chunk_Reader_t;
+   Data       : access User_Data;
+   Chunk_Name : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Load_Typed") " function calls "
+      (item parameter "Reader") " and loads the received data as
+      a Lua chunk named " (item parameter "Chunk_Name") ".")
+    (para
+      (item parameter "Reader") " is passed the generic, user-provided
+      value " (item parameter "Data") ". The function is generic to allow
+      for type-safety, as opposed to using a raw memory address to pass
+      arbitrary opaque data."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Load_Typed") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_load" "lua_load") ".")))

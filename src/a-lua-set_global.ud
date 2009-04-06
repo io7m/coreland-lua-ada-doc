@@ -1,0 +1,32 @@
+(section
+  (ref "lua_set_global")
+  (title "Lua.Set_Global")
+  (para procedure_desc "Set value from global.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Set_Global
+  (State : State_t;
+   Key   : ICS.chars_ptr);
+
+procedure Set_Global
+  (State : State_t;
+   Key   : String);
+
+procedure Set_Global
+  (State : State_t;
+   Key   : UB_Strings.Unbounded_String);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Global") " procedure 
+      pops a value from the stack and sets it as the new value of global "
+      (item parameter "Key") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Set_Global") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_setglobal" "lua_setglobal") ".")))

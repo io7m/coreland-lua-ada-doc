@@ -1,0 +1,21 @@
+(section
+  (ref "lua_open_libs")
+  (title "Lua.Lib.Open_Libs")
+  (para procedure_desc "Open all standard libraries.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Open_Libs (State : Lua.State_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Open_Libs") " procedure loads the Lua
+      standard libraries."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Open_Libs") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#luaL_openlibs" "luaL_openlibs") ".")))

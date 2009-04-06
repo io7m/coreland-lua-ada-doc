@@ -1,0 +1,26 @@
+(section
+  (ref "lua_object_length")
+  (title "Lua.Object_Length")
+  (para function_desc "Return length of object at stack index.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Object_Length
+  (State : State_t;
+   Index : Integer) return Integer_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Object_Length") " function
+      returns the \"length\" of the value at the given acceptable index: for
+      strings, this is the string length; for tables, this is the result of
+      the length operator ('#'); for userdata, this is the size of the block
+      of memory allocated for the userdata; for other values, it is 0."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Object_Length") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_objlen" "lua_objlen") ".")))

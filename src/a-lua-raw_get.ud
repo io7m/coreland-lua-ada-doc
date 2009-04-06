@@ -1,0 +1,24 @@
+(section
+  (ref "lua_raw_get")
+  (title "Lua.Raw_Get")
+  (para procedure_desc "Get table value without metamethods.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Raw_Get
+  (State : State_t;
+   Index : Integer) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Raw_Get") " procedure is equivalent to "
+      (link "lua_get_table" "Lua.Get_Table") " but does raw access (does not
+      call metamethods)."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Raw_Get") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_rawget" "lua_rawget") ".")))

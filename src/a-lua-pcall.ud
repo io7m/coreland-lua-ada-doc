@@ -1,0 +1,39 @@
+(section
+  (ref "lua_pcall")
+  (title "Lua.PCall")
+  (para function_desc "Call function in protected mode.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function PCall
+ (State         : State_t;
+  Num_Arguments : Integer;
+  Num_Results   : Integer;
+  Error_Func    : Integer) return Error_t;
+
+function Protected_Call
+ (State         : State_t;
+  Num_Arguments : Integer;
+  Num_Results   : Integer;
+  Error_Func    : Integer) return Error_t renames PCall;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "PCall") " function is equivalent to "
+      (link "lua_call" "Lua.Call") " except that errors are caught and
+      an error message and error code are pushed onto the stack - in
+      that order.")
+    (para
+      "If " (item parameter "Err_Func") " is " (item constant "0")
+      ", then the error message returned on the stack is exactly the original
+      error message. Otherwise, " (item parameter "Err_Func") " is the stack
+      index of an error handler function. In the case of runtime errors, this
+      function will be called with the error message."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "PCall") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pcall" "lua_pcall") ".")))

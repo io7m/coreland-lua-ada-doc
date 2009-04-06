@@ -1,0 +1,26 @@
+(section
+  (ref "lua_is_string")
+  (title "Lua.Is_String")
+  (para function_desc "Element of stack is string?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Is_String
+  (State : State_t;
+   Index : Integer) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Is_String") " function
+      returns " (item constant "True") " if the element of
+      the stack at " (item parameter "Index") " is a string or "
+      (item constant "False") " otherwise."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Is_String") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_isstring" "lua_isstring") ".")))
+

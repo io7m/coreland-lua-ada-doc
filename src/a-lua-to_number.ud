@@ -1,0 +1,24 @@
+(section
+  (ref "lua_to_number")
+  (title "Lua.To_Number")
+  (para function_desc "Return element of stack as number.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function To_Number
+  (State : State_t;
+   Index : Integer) return Number_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "To_Number") " function
+      returns the element of the stack at " (item parameter "Index")
+      " as a number."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "To_Number") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_tonumber" "lua_tonumber") ".")))

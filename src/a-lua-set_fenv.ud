@@ -1,0 +1,28 @@
+(section
+  (ref "lua_set_fenv")
+  (title "Lua.Set_FEnv")
+  (para function_desc "Set environment table for element.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Set_FEnv
+  (State : State_t;
+   Index : Integer) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Set_FEnv") " function 
+      pops a table from the stack and sets it as the new environment for
+      the value at " (item parameter "Index") ". If the value at " (item
+      parameter "Index") " is neither a function nor a thread nor a
+      userdata, " (item ada_function "Set_FEnv") " returns " (item
+      constant "Lua_Error_Runtime") ". Otherwise it returns "
+      (item constant "Lua_Error_None") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Set_FEnv") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_setfenv" "lua_setfenv") ".")))

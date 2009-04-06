@@ -1,0 +1,24 @@
+(section
+  (ref "lua_get_fenv")
+  (title "Lua.Get_FEnv")
+  (para procedure_desc "Get environment table from element.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Get_FEnv
+  (State : State_t;
+   Index : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_FEnv") " procedure 
+      pushes onto the stack the environment table of the value at "
+      (item parameter "Index") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Get_FEnv") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_getfenv" "lua_getfenv") ".")))

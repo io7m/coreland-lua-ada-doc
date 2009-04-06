@@ -1,0 +1,36 @@
+(section
+  (ref "lua_set_field")
+  (title "Lua.Set_Field")
+  (para procedure_desc "Set value of field.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Set_Field
+  (State : State_t;
+   Index : Integer;
+   Key   : ICS.chars_ptr);
+
+procedure Set_Field
+  (State : State_t;
+   Index : Integer;
+   Key   : String);
+
+procedure Set_Field
+  (State : State_t;
+   Index : Integer;
+   Key   : UB_Strings.Unbounded_String);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Field") " procedure 
+      does the equivalent of " (item parameter "Index") "["
+      (item parameter "Key") "] = " (item variable "V") ", where "
+      (item variable "V") " is the value at the top of the stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Set_Field") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_setfield" "lua_setfield") ".")))

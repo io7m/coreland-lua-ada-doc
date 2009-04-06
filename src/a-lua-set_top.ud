@@ -1,0 +1,27 @@
+(section
+  (ref "lua_set_top")
+  (title "Lua.Set_Top")
+  (para procedure_desc "Set index of top of stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Set_Top
+  (State : State_t;
+   Index : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Top") " procedure
+      accepts any acceptable index, or " (item constant "0") ", and sets
+      the stack top to " (item parameter "Index") ". If the new top is
+      larger than the old one, then the new elements are filled with "
+      (item constant "nil") ". If " (item parameter "Index") " is "
+      (item constant "0") ", then all stack elements are removed.")
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Set_Top") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_settop" "lua_settop") ".")))

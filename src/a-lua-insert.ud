@@ -1,0 +1,24 @@
+(section
+  (ref "lua_insert")
+  (title "Lua.Insert")
+  (para procedure_desc "Insert element from stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Insert
+  (State : State_t;
+   Index : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Insert") " procedure moves the top element
+      into the given valid index, shifting up the elements above this index
+      to open space."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Insert") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_insert" "lua_insert") ".")))

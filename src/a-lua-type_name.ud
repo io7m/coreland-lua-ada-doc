@@ -1,0 +1,21 @@
+(section
+  (ref "lua_type_name")
+  (title "Lua.Type_Name")
+  (para function_desc "Return name of type.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Type_Name (T : in Lua.Type_t) return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Type_Name") " function returns the name
+      of the type specified by " (item parameter "T") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Type_Name") " function is roughly equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_typename" "lua_typename") ".")))

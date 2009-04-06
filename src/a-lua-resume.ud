@@ -1,0 +1,30 @@
+(section
+  (ref "lua_resume")
+  (title "Lua.Resume")
+  (para function_desc "Starts and resume a coroutine in a given thread.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+type Error_Message_t (Length : Natural) is record
+  Code    : Error_t;
+  Message : String (1 .. Length);
+end record;
+
+function Resume
+  (State         : State_t;
+   Num_Arguments : Integer) return Error_Message_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Resume") " function starts and resumes a
+      coroutine in the given thread. For the semantics, please see the "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_resume"
+      "Lua reference manual") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Resume") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_resume" "lua_resume") ".")))

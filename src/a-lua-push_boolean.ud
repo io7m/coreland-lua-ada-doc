@@ -1,0 +1,23 @@
+(section
+  (ref "lua_push_boolean")
+  (title "Lua.Push_Boolean")
+  (para procedure_desc "Push boolean onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_Boolean
+  (State : State_t;
+   B     : Boolean);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_Boolean") " procedure pushes "
+      (item parameter "B") " onto the top of the Lua stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_Boolean") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushboolean" "lua_pushboolean") ".")))
