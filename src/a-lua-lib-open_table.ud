@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_table")
+  (ref "lua_lib_open_table")
   (title "Lua.Lib.Open_Table")
   (para procedure_desc "Open table library.")
   (subsection

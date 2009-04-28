@@ -2,6 +2,12 @@
   (title "Lua API Reference")
   (contents)
 
+  (section
+    (title "Subprogram map")
+    (para "The following table shows the mapping between the Ada subprograms
+      and the original C API.")
+    (include "m_proc_map.ud"))
+
   (include "a-lua-types.ud")
 
   (include "a-lua-open.ud")
@@ -75,7 +81,7 @@
 ;  (include "a-lua-concat.ud")
 ;  (include "a-lua-register.ud")
 ;  (include "a-lua-pop.ud")
-;  (include "a-lua-next.ud")
+  (include "a-lua-next.ud")
 ;  (include "a-lua-reference.ud")
 ;  (include "a-lua-unreference.ud")
 ;  (include "a-lua-dereference.ud")

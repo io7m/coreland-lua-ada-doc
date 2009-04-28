@@ -1,0 +1,25 @@
+(section
+  (ref "lua_next")
+  (title "Lua.Next")
+  (para function_desc "Place next key/value pair onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Next
+ (State : State_t;
+  Index : Integer) return Integer;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Next") " subprogram
+       pops a key from the stack, and pushes a key-value pair from the table at "
+       (item parameter "Index") " (the \"next\" pair after the given key)."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Next") " subprograms are equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_next" "lua_next") ".")))
+

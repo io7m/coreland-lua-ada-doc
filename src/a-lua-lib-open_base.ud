@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_base")
+  (ref "lua_lib_open_base")
   (title "Lua.Lib.Open_Base")
   (para procedure_desc "Open base library.")
   (subsection

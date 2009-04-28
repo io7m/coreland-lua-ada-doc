@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_libs")
+  (ref "lua_lib_open_libs")
   (title "Lua.Lib.Open_Libs")
   (para procedure_desc "Open all standard libraries.")
   (subsection

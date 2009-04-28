@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_math")
+  (ref "lua_lib_open_math")
   (title "Lua.Lib.Open_Math")
   (para procedure_desc "Open math library.")
   (subsection

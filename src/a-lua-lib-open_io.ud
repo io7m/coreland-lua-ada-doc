@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_io")
+  (ref "lua_lib_open_io")
   (title "Lua.Lib.Open_IO")
   (para procedure_desc "Open io library.")
   (subsection

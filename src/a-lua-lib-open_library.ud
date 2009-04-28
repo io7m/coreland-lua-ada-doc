@@ -1,5 +1,5 @@
 (section
-  (ref "lua_open_library")
+  (ref "lua_lib_open_library")
   (title "Lua.Lib.Open_Library")
   (para function_desc "Load external Lua library.")
   (subsection
