@@ -41,7 +41,10 @@
   (include "a-lua-is_thread.ud")
   (include "a-lua-is_user_function.ud")
   (include "a-lua-is_userdata.ud")
+  (include "a-lua-is_light_userdata.ud")
   (include "a-lua-is_nil.ud")
+  (include "a-lua-is_none.ud")
+  (include "a-lua-is_none_or_nil.ud")
   (include "a-lua-is_equal.ud")
   (include "a-lua-is_raw_equal.ud")
   (include "a-lua-is_less_than.ud")
@@ -49,10 +52,12 @@
   (include "a-lua-type_of.ud")
   (include "a-lua-type_name.ud")
 
+  (include "a-lua-to_integer.ud")
   (include "a-lua-to_number.ud")
   (include "a-lua-to_string.ud")
   (include "a-lua-to_boolean.ud")
   (include "a-lua-to_c_function.ud")
+  (include "a-lua-to_thread.ud")
 
   (include "a-lua-object_length.ud")
 
@@ -88,7 +93,6 @@
 
   (include "a-lua-concat.ud")
 ;  (include "a-lua-register.ud")
-;  (include "a-lua-pop.ud")
   (include "a-lua-next.ud")
   (include "a-lua-reference.ud")
   (include "a-lua-unreference.ud")

@@ -1,0 +1,24 @@
+(section
+  (ref "lua_to_thread")
+  (title "Lua.To_Thread")
+  (para function_desc "Return element of stack as thread.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function To_Thread
+  (State : State_t;
+   Index : Integer) return State_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "To_Thread") " function
+      returns the element of the stack at " (item parameter "Index")
+      " as a thread."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "To_Thread") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_tothread" "lua_tothread") ".")))
