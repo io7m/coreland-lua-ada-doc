@@ -16,6 +16,7 @@
   (include "a-lua-get_top.ud")
   (include "a-lua-set_top.ud")
   (include "a-lua-push_value.ud")
+  (include "a-lua-pop.ud")
   (include "a-lua-remove.ud")
   (include "a-lua-insert.ud")
   (include "a-lua-replace.ud")
@@ -33,7 +34,11 @@
   (include "a-lua-error.ud")
 
   (include "a-lua-is_number.ud")
+  (include "a-lua-is_boolean.ud")
   (include "a-lua-is_string.ud")
+  (include "a-lua-is_table.ud")
+  (include "a-lua-is_function.ud")
+  (include "a-lua-is_thread.ud")
   (include "a-lua-is_user_function.ud")
   (include "a-lua-is_userdata.ud")
   (include "a-lua-is_nil.ud")
@@ -58,6 +63,7 @@
   (include "a-lua-push_user_closure.ud")
   (include "a-lua-push_user_function.ud")
 
+  (include "a-lua-create_table.ud")
   (include "a-lua-new_table.ud")
   (include "a-lua-new_thread.ud")
 

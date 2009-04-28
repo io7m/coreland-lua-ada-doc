@@ -1,0 +1,26 @@
+(section
+  (ref "lua_create_table")
+  (title "Lua.Create_Table")
+  (para procedure_desc "Create new table.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Create_Table
+  (State              : State_t;
+   Array_Elements     : in Natural;
+   Non_Array_Elements : in Natural);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Create_Table") " procedure 
+      creates a new empty table and pushes it onto the stack.
+      The new table has space pre-allocated for " (item parameter "Array_Elements")
+      " array elements and " (item parameter "Non_Array_Elements") " non-array elements."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Create_Table") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_createtable" "lua_createtable") ".")))
