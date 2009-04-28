@@ -82,8 +82,8 @@
 ;  (include "a-lua-register.ud")
 ;  (include "a-lua-pop.ud")
   (include "a-lua-next.ud")
-;  (include "a-lua-reference.ud")
-;  (include "a-lua-unreference.ud")
+  (include "a-lua-reference.ud")
+  (include "a-lua-unreference.ud")
 ;  (include "a-lua-dereference.ud")
 
   (include "a-lua-version.ud")
