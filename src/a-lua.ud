@@ -78,7 +78,7 @@
   (include "a-lua-resume.ud")
   (include "a-lua-yield.ud")
 
-;  (include "a-lua-concat.ud")
+  (include "a-lua-concat.ud")
 ;  (include "a-lua-register.ud")
 ;  (include "a-lua-pop.ud")
   (include "a-lua-next.ud")

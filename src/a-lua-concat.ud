@@ -1,0 +1,24 @@
+(section
+  (ref "lua_concat")
+  (title "Lua.Concat")
+  (para function_desc "Concatenate values on stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+procedure Concat
+  (State : State_t;
+   N     : Natural);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Concat") " subprogram
+       concatenates the " (item parameter "N") " values at the top of the
+       stack, pops them, and leaves the result at the top."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Concat") " subprograms are equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_concat" "lua_concat") ".")))
