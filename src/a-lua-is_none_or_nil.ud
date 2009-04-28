@@ -17,7 +17,7 @@ function Is_None_Or_Nil
       "The " (item ada_procedure "Is_None_Or_Nil") " function
       returns " (item constant "True") " if the element of
       the stack at " (item parameter "Index") " is a invalid or "
-      (item constant "nil") " or " (item constant "False") " otherwise."))
+      (item constant "nil") ", or " (item constant "False") " otherwise."))
   (subsection
     (title "Mapping")
     (para
