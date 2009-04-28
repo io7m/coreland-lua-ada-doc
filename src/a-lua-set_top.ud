@@ -19,7 +19,7 @@ procedure Set_Top
       the stack top to " (item parameter "Index") ". If the new top is
       larger than the old one, then the new elements are filled with "
       (item constant "nil") ". If " (item parameter "Index") " is "
-      (item constant "0") ", then all stack elements are removed.")
+      (item constant "0") ", then all stack elements are removed."))
   (subsection
     (title "Mapping")
     (para

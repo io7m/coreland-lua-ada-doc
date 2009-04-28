@@ -14,6 +14,7 @@
   (include "a-lua-close.ud")
   (include "a-lua-at_panic.ud")
   (include "a-lua-get_top.ud")
+  (include "a-lua-set_top.ud")
   (include "a-lua-push_value.ud")
   (include "a-lua-remove.ud")
   (include "a-lua-insert.ud")
@@ -22,6 +23,7 @@
 
   (include "a-lua-load_buffer.ud")
   (include "a-lua-load_file.ud")
+  (include "a-lua-load_string.ud")
   (include "a-lua-load_typed.ud")
   (include "a-lua-exec_string.ud")
   (include "a-lua-exec_file.ud")
@@ -88,7 +90,8 @@
 
   (include "a-lua-version.ud")
 
-;  (include "a-lua-set_hook.ud")
-;  (include "a-lua-get_hook_mask.ud")
+  (include "a-lua-set_hook.ud")
+  (include "a-lua-get_hook_mask.ud")
+  (include "a-lua-get_hook_count.ud")
 
 ) ; end of section

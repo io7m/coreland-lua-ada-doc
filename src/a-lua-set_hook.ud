@@ -1,0 +1,25 @@
+(section
+  (ref "lua_set_hook")
+  (title "Lua.Set_Hook")
+  (para function_desc "Sets the debugging hook function.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+procedure Set_Hook
+ (State : State_t;
+  Func  : Hook_t;
+  AMask : Mask_t;
+  Count : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Hook") " subprogram
+       sets the debugging hook function."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Hook") " subprograms are equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_sethook" "lua_sethook") ".")))

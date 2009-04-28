@@ -1,0 +1,27 @@
+(section
+  (ref "lua_load_string")
+  (title "Lua.Load_String")
+  (para function_desc "Load Lua chunk.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Load_String
+  (State  : State_t;
+   Buffer : String) return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Load_String") " functions load the buffer "
+      (item parameter "Buffer") " as a Lua chunk.")
+    (para
+      "The functions return " (item constant "Lua_Error_None") " on success or
+      any of the other enumeration values of " (item ada_type "Error_t") " on
+      failure."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "Load_String") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_load" "lua_load") ".")))

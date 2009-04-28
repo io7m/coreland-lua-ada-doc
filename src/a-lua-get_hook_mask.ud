@@ -1,0 +1,21 @@
+(section
+  (ref "lua_get_hook_mask")
+  (title "Lua.Get_Hook_Mask")
+  (para function_desc "Returns the current hook mask.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function Get_Hook_Mask (State : State_t) return Mask_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Hook_Mask") " function
+       returns the current hook mask."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Hook_Mask") " subprogram is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_gethookmask" "lua_gethookmask") ".")))

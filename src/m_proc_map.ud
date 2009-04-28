@@ -20,6 +20,7 @@
 (t-row (item "lua_getfield")(item (link "lua_get_global" "Lua.Get_Global")))
 (t-row (item "lua_getfield")(item (link "lua_get_global" "Lua.Get_Global")))
 (t-row (item "lua_getfield")(item (link "lua_get_global" "Lua.Get_Global")))
+(t-row (item "lua_gethookcount")(item (link "lua_get_hook_count" "Lua.Get_Hook_Count")))
 (t-row (item "lua_gethookmask")(item (link "lua_get_hook_mask" "Lua.Get_Hook_Mask")))
 (t-row (item "lua_getmetatable")(item (link "lua_get_metatable" "Lua.Get_Metatable")))
 (t-row (item "lua_gettable")(item (link "lua_get_table" "Lua.Get_Table")))
