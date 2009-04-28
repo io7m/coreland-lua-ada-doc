@@ -21,5 +21,5 @@ procedure Set_Hook
   (subsection
     (title "Mapping")
     (para
-      "The " (item ada_subprogram "Set_Hook") " subprograms are equivalent to "
+      "The " (item ada_subprogram "Set_Hook") " subprogram is equivalent to "
       (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_sethook" "lua_sethook") ".")))

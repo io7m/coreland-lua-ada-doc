@@ -39,7 +39,6 @@
 (t-row (item "lua_newthread")(item (link "lua_new_thread" "Lua.New_Thread")))
 (t-row (item "lua_next")(item (link "lua_next" "Lua.Next")))
 (t-row (item "lua_objlen")(item (link "lua_object_length" "Lua.Object_Length")))
-(t-row (item "lua_objlen")(item (link "lua_string_length" "Lua.String_Length")))
 (t-row (item "lua_pcall")(item (link "lua_pcall" "Lua.PCall")))
 (t-row (item "lua_pushboolean")(item (link "lua_push_boolean" "Lua.Push_Boolean")))
 (t-row (item "lua_pushclosure")(item (link "lua_push_user_closure" "Lua.Push_User_Closure")))
