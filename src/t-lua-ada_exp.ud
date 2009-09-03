@@ -1,0 +1,48 @@
+(subsection
+  (title "standard use cases")
+  (para-verbatim example "
+# compile Ada source using the library
+$ lua-ada-conf compile cflags incdir
+-I/usr/local/include/coreland/lua-ada 
+
+# link object files against the static library
+$ lua-ada-conf compile ldflags slibdir
+-L/usr/local/lib/coreland/lua-ada-static -llua-ada 
+
+# link object files against the dynamic library
+$ lua-ada-conf compile ldflags dlibdir
+-L/usr/local/lib/coreland/lua-ada -llua-ada 
+
+"))
+
+(subsection
+  (title "other use cases")
+  (para-verbatim example "
+$ lua-ada-conf version
+lua-ada 0.1 
+
+$ lua-ada-conf incdir
+/usr/local/include/coreland/lua-ada 
+
+$ lua-ada-conf dlibdir
+/usr/local/lib/coreland/lua-ada 
+
+$ lua-ada-conf slibdir
+/usr/local/lib/coreland/lua-ada-static 
+
+$ lua-ada-conf cflags
+
+
+$ lua-ada-conf ldflags
+-llua-ada 
+
+$ lua-ada-conf compile incdir
+-I/usr/local/include/coreland/lua-ada 
+
+$ lua-ada-conf compile dlibdir
+-L/usr/local/lib/coreland/lua-ada 
+
+$ lua-ada-conf compile slibdir
+-L/usr/local/lib/coreland/lua-ada-static 
+
+"))

@@ -1,0 +1,5 @@
+(subsection
+  (title "External Package Requirements")
+  (table package_deps
+    (t-row (item "Package")                         (item "Version"))
+    (t-row (item (link-ext "http://lua.org" "Lua")) (item version ">= 5.1.4"))))
