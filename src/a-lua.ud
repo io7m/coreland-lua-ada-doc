@@ -63,6 +63,7 @@
   (include "a-lua-object_length.ud")
 
   (include "a-lua-push_boolean.ud")
+  (include "a-lua-push_integer.ud")
   (include "a-lua-push_nil.ud")
   (include "a-lua-push_number.ud")
   (include "a-lua-push_string.ud")

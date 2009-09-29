@@ -53,6 +53,7 @@
 (t-row (item "lua_pushboolean")(item (link "lua_push_boolean" "Lua.Push_Boolean")))
 (t-row (item "lua_pushclosure")(item (link "lua_push_user_closure" "Lua.Push_User_Closure")))
 (t-row (item "lua_pushclosure")(item (link "lua_push_user_function" "Lua.Push_User_Function")))
+(t-row (item "lua_pushinteger")(item (link "lua_push_integer" "Lua.Push_Integer")))
 (t-row (item "lua_pushlstring")(item (link "lua_push_string" "Lua.Push_String")))
 (t-row (item "lua_pushlstring")(item (link "lua_push_string" "Lua.Push_String")))
 (t-row (item "lua_pushnil")(item (link "lua_push_nil" "Lua.Push_Nil")))

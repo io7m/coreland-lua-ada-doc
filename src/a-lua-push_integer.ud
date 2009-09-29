@@ -1,0 +1,23 @@
+(section
+  (ref "lua_push_integer")
+  (title "Lua.Push_Integer")
+  (para procedure_desc "Push integer onto stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with Lua;
+
+procedure Push_Integer
+  (State : State_t;
+   I     : Integer);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Push_Integer") " procedure pushes "
+      (item parameter "I") " onto the top of the Lua stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_procedure "Push_Integer") " procedure is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_pushinteger" "lua_pushinteger") ".")))
