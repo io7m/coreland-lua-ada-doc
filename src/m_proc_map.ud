@@ -84,6 +84,7 @@
 (t-row (item "lua_tointeger")(item (link "lua_to_integer" "Lua.To_Integer")))
 (t-row (item "lua_tonumber")(item (link "lua_to_number" "Lua.To_Number")))
 (t-row (item "lua_tostring")(item (link "lua_to_string" "Lua.To_String")))
+(t-row (item "lua_tostring")(item (link "lua_to_unbounded_string" "Lua.To_Unbounded_String")))
 (t-row (item "lua_tothread")(item (link "lua_to_thread" "Lua.To_Thread")))
 (t-row (item "lua_type")(item (link "lua_type_of" "Lua.Type_Of")))
 (t-row (item "lua_typename")(item (link "lua_type_name" "Lua.Type_Name")))

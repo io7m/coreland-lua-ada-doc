@@ -58,6 +58,7 @@
   (include "a-lua-to_boolean.ud")
   (include "a-lua-to_c_function.ud")
   (include "a-lua-to_thread.ud")
+  (include "a-lua-to_unbounded_string.ud")
 
   (include "a-lua-object_length.ud")
 

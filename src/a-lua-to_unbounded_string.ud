@@ -1,0 +1,24 @@
+(section
+  (ref "lua_to_unbounded_string")
+  (title "Lua.To_Unbounded_String")
+  (para function_desc "Return element of stack as unbounded string.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with Lua;
+
+function To_Unbounded_String
+  (State : State_t;
+   Index : Integer) return Ada.Strings.Unbounded.Unbounded_String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "To_Unbounded_String") " function
+      returns the element of the stack at " (item parameter "Index")
+      " as an unbounded string."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_function "To_Unbounded_String") " function is equivalent to "
+      (link-ext "http://www.lua.org/manual/5.1/manual.html#lua_tostring" "lua_tostring") ".")))
