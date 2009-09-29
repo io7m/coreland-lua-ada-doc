@@ -1,5 +1,5 @@
 (subsection
-  (title "standard use cases")
+  (title "Standard Use Cases")
   (para-verbatim example "
 # compile Ada source using the library
 $ lua-ada-conf compile cflags incdir
@@ -16,7 +16,7 @@ $ lua-ada-conf compile ldflags dlibdir
 "))
 
 (subsection
-  (title "other use cases")
+  (title "Other Use Cases")
   (para-verbatim example "
 $ lua-ada-conf version
 lua-ada 0.1 

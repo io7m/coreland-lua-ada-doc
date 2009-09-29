@@ -2,7 +2,7 @@
 
 cat <<EOF
 (subsection
-  (title "standard use cases")
+  (title "Standard Use Cases")
   (para-verbatim example "
 EOF
 
@@ -28,7 +28,7 @@ cat <<EOF
 "))
 
 (subsection
-  (title "other use cases")
+  (title "Other Use Cases")
   (para-verbatim example "
 EOF
 
